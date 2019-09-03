@@ -1,4 +1,4 @@
-![FastAction](/Users/dengyonghao/Library/Mobile Documents/com~apple~CloudDocs/FastActions/images/FastActions.png)
+![FastAction](./images/FastActions.png)
 
 <p align="center">
 <a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
