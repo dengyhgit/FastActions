@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FastActions"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of FastActions."
+  spec.version      = "0.0.2"
+  spec.summary      = "FastActions."
 
   spec.description  = <<-DESC
   					          FastActions is a powerful and pure Swift implemented library for action handler.
@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "9.0"
   spec.tvos.deployment_target = "10.0"
   spec.osx.deployment_target = "10.12"
-  spec.watchos.deployment_target = "3.0"
+  # spec.watchos.deployment_target = "3.0"
 
   spec.source       = { :git => "https://github.com/dengyhgit/FastActions.git", :tag => "#{spec.version}" }
   spec.source_files  = ["Sources/**/*.swift", "Sources/FastActions.h"]

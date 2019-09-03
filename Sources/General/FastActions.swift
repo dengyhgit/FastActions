@@ -37,6 +37,8 @@ public typealias ViewController = UIViewController
 public typealias View = UIView
 #else
 import WatchKit
+public typealias View = WKInterfaceObject
+public typealias ViewController = WKInterfaceController
 #endif
 #endif
 

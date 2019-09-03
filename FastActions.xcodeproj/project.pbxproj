@@ -33,6 +33,7 @@
 		65F72599231E11C600A7035D /* FastActionsMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65710ED0231CFF90004925E4 /* FastActionsMaps.swift */; };
 		65F7259A231E11C600A7035D /* UIView+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9C2319175D0018DA1C /* UIView+FastActions.swift */; };
 		65F7259B231E11C600A7035D /* UIViewController+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9E231944340018DA1C /* UIViewController+FastActions.swift */; };
+		65F725B2231E446D00A7035D /* FastActions.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D873C6230BFD3A008B0BAE /* FastActions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65FCDCCB231C0439009B2521 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCDCCA231C0439009B2521 /* Subscriber.swift */; };
 /* End PBXBuildFile section */
 
@@ -176,6 +177,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F725B2231E446D00A7035D /* FastActions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
