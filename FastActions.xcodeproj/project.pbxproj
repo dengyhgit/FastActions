@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65710ED1231CFF90004925E4 /* FastActionsMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65710ED0231CFF90004925E4 /* FastActionsMaps.swift */; };
+		65B8FF9D2319175D0018DA1C /* UIView+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9C2319175D0018DA1C /* UIView+FastActions.swift */; };
+		65B8FF9F231944350018DA1C /* UIViewController+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9E231944340018DA1C /* UIViewController+FastActions.swift */; };
+		65B8FFA6231949650018DA1C /* FastActionsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FFA5231949650018DA1C /* FastActionsParams.swift */; };
+		65B8FFA8231949E60018DA1C /* FastActionDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FFA7231949E60018DA1C /* FastActionDispatch.swift */; };
+		65B8FFAA23194B280018DA1C /* FastActionsDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FFA923194B280018DA1C /* FastActionsDispatcher.swift */; };
+		65D873C8230BFD3A008B0BAE /* FastActions.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D873C6230BFD3A008B0BAE /* FastActions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65D873F4230C010D008B0BAE /* FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D873F3230C010D008B0BAE /* FastActions.swift */; };
+		65F7257B231E0CF100A7035D /* FastActions.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D873C6230BFD3A008B0BAE /* FastActions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65F7257C231E0CFD00A7035D /* FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D873F3230C010D008B0BAE /* FastActions.swift */; };
+		65F7257D231E0CFD00A7035D /* FastActionsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FFA5231949650018DA1C /* FastActionsParams.swift */; };
+		65F7257E231E0CFD00A7035D /* FastActionDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FFA7231949E60018DA1C /* FastActionDispatch.swift */; };
+		65F7257F231E0CFD00A7035D /* FastActionsDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FFA923194B280018DA1C /* FastActionsDispatcher.swift */; };
+		65F72580231E0CFD00A7035D /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCDCCA231C0439009B2521 /* Subscriber.swift */; };
+		65F72581231E0CFD00A7035D /* FastActionsMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65710ED0231CFF90004925E4 /* FastActionsMaps.swift */; };
+		65F72582231E0CFD00A7035D /* UIView+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9C2319175D0018DA1C /* UIView+FastActions.swift */; };
+		65F72583231E0CFD00A7035D /* UIViewController+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9E231944340018DA1C /* UIViewController+FastActions.swift */; };
+		65F72593231E11B800A7035D /* FastActions.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D873C6230BFD3A008B0BAE /* FastActions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65F72594231E11C600A7035D /* FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D873F3230C010D008B0BAE /* FastActions.swift */; };
+		65F72595231E11C600A7035D /* FastActionsParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FFA5231949650018DA1C /* FastActionsParams.swift */; };
+		65F72596231E11C600A7035D /* FastActionDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FFA7231949E60018DA1C /* FastActionDispatch.swift */; };
+		65F72597231E11C600A7035D /* FastActionsDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FFA923194B280018DA1C /* FastActionsDispatcher.swift */; };
+		65F72598231E11C600A7035D /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCDCCA231C0439009B2521 /* Subscriber.swift */; };
+		65F72599231E11C600A7035D /* FastActionsMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65710ED0231CFF90004925E4 /* FastActionsMaps.swift */; };
+		65F7259A231E11C600A7035D /* UIView+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9C2319175D0018DA1C /* UIView+FastActions.swift */; };
+		65F7259B231E11C600A7035D /* UIViewController+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9E231944340018DA1C /* UIViewController+FastActions.swift */; };
+		65FCDCCB231C0439009B2521 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCDCCA231C0439009B2521 /* Subscriber.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65710ED0231CFF90004925E4 /* FastActionsMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActionsMaps.swift; sourceTree = "<group>"; };
+		65B8FF9C2319175D0018DA1C /* UIView+FastActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FastActions.swift"; sourceTree = "<group>"; };
+		65B8FF9E231944340018DA1C /* UIViewController+FastActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+FastActions.swift"; sourceTree = "<group>"; };
+		65B8FFA5231949650018DA1C /* FastActionsParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActionsParams.swift; sourceTree = "<group>"; };
+		65B8FFA7231949E60018DA1C /* FastActionDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActionDispatch.swift; sourceTree = "<group>"; };
+		65B8FFA923194B280018DA1C /* FastActionsDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActionsDispatcher.swift; sourceTree = "<group>"; };
+		65D873C3230BFD3A008B0BAE /* FastActions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastActions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D873C6230BFD3A008B0BAE /* FastActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastActions.h; sourceTree = "<group>"; };
+		65D873C7230BFD3A008B0BAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D873F3230C010D008B0BAE /* FastActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActions.swift; sourceTree = "<group>"; };
+		65F72573231E0CCF00A7035D /* FastActions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastActions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F7258B231E117F00A7035D /* FastActions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastActions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F725A5231E124600A7035D /* FastActions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastActions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65FCDCCA231C0439009B2521 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65D873C0230BFD3A008B0BAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F72570231E0CCF00A7035D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F72588231E117F00A7035D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F725A2231E124600A7035D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65B8FF99231916600018DA1C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				65D873F3230C010D008B0BAE /* FastActions.swift */,
+				65B8FFA5231949650018DA1C /* FastActionsParams.swift */,
+				65B8FFA7231949E60018DA1C /* FastActionDispatch.swift */,
+				65B8FFA923194B280018DA1C /* FastActionsDispatcher.swift */,
+				65FCDCCA231C0439009B2521 /* Subscriber.swift */,
+				65710ED0231CFF90004925E4 /* FastActionsMaps.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		65B8FF9A231916600018DA1C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				65B8FF9C2319175D0018DA1C /* UIView+FastActions.swift */,
+				65B8FF9E231944340018DA1C /* UIViewController+FastActions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		65B8FF9B231916600018DA1C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		65D873B9230BFD3A008B0BAE = {
+			isa = PBXGroup;
+			children = (
+				65D873C5230BFD3A008B0BAE /* Sources */,
+				65D873C4230BFD3A008B0BAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65D873C4230BFD3A008B0BAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65D873C3230BFD3A008B0BAE /* FastActions.framework */,
+				65F72573231E0CCF00A7035D /* FastActions.framework */,
+				65F7258B231E117F00A7035D /* FastActions.framework */,
+				65F725A5231E124600A7035D /* FastActions.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65D873C5230BFD3A008B0BAE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				65D873C7230BFD3A008B0BAE /* Info.plist */,
+				65D873C6230BFD3A008B0BAE /* FastActions.h */,
+				65B8FF99231916600018DA1C /* General */,
+				65B8FF9A231916600018DA1C /* Extensions */,
+				65B8FF9B231916600018DA1C /* Utility */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65D873BE230BFD3A008B0BAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D873C8230BFD3A008B0BAE /* FastActions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F7256E231E0CCF00A7035D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F7257B231E0CF100A7035D /* FastActions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F72586231E117F00A7035D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F72593231E11B800A7035D /* FastActions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F725A0231E124600A7035D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		65D873C2230BFD3A008B0BAE /* FastActions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D873CB230BFD3A008B0BAE /* Build configuration list for PBXNativeTarget "FastActions" */;
+			buildPhases = (
+				65D873BE230BFD3A008B0BAE /* Headers */,
+				65D873BF230BFD3A008B0BAE /* Sources */,
+				65D873C0230BFD3A008B0BAE /* Frameworks */,
+				65D873C1230BFD3A008B0BAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FastActions;
+			productName = FastActions;
+			productReference = 65D873C3230BFD3A008B0BAE /* FastActions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65F72572231E0CCF00A7035D /* FastActions-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F72578231E0CCF00A7035D /* Build configuration list for PBXNativeTarget "FastActions-macOS" */;
+			buildPhases = (
+				65F7256E231E0CCF00A7035D /* Headers */,
+				65F7256F231E0CCF00A7035D /* Sources */,
+				65F72570231E0CCF00A7035D /* Frameworks */,
+				65F72571231E0CCF00A7035D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FastActions-macOS";
+			productName = "FastActions-macOS";
+			productReference = 65F72573231E0CCF00A7035D /* FastActions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65F7258A231E117F00A7035D /* FastActions-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F72590231E118000A7035D /* Build configuration list for PBXNativeTarget "FastActions-tvOS" */;
+			buildPhases = (
+				65F72586231E117F00A7035D /* Headers */,
+				65F72587231E117F00A7035D /* Sources */,
+				65F72588231E117F00A7035D /* Frameworks */,
+				65F72589231E117F00A7035D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FastActions-tvOS";
+			productName = "FastActions-tvOS";
+			productReference = 65F7258B231E117F00A7035D /* FastActions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65F725A4231E124600A7035D /* FastActions-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F725AA231E124600A7035D /* Build configuration list for PBXNativeTarget "FastActions-watchOS" */;
+			buildPhases = (
+				65F725A0231E124600A7035D /* Headers */,
+				65F725A1231E124600A7035D /* Sources */,
+				65F725A2231E124600A7035D /* Frameworks */,
+				65F725A3231E124600A7035D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FastActions-watchOS";
+			productName = "FastActions-watchOS";
+			productReference = 65F725A5231E124600A7035D /* FastActions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65D873BA230BFD3A008B0BAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = DengYonghao;
+				TargetAttributes = {
+					65D873C2230BFD3A008B0BAE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					65F72572231E0CCF00A7035D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					65F7258A231E117F00A7035D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					65F725A4231E124600A7035D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 65D873BD230BFD3A008B0BAE /* Build configuration list for PBXProject "FastActions" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65D873B9230BFD3A008B0BAE;
+			productRefGroup = 65D873C4230BFD3A008B0BAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65D873C2230BFD3A008B0BAE /* FastActions */,
+				65F72572231E0CCF00A7035D /* FastActions-macOS */,
+				65F7258A231E117F00A7035D /* FastActions-tvOS */,
+				65F725A4231E124600A7035D /* FastActions-watchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65D873C1230BFD3A008B0BAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F72571231E0CCF00A7035D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F72589231E117F00A7035D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F725A3231E124600A7035D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65D873BF230BFD3A008B0BAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65710ED1231CFF90004925E4 /* FastActionsMaps.swift in Sources */,
+				65B8FFA8231949E60018DA1C /* FastActionDispatch.swift in Sources */,
+				65B8FFA6231949650018DA1C /* FastActionsParams.swift in Sources */,
+				65B8FF9F231944350018DA1C /* UIViewController+FastActions.swift in Sources */,
+				65B8FFAA23194B280018DA1C /* FastActionsDispatcher.swift in Sources */,
+				65B8FF9D2319175D0018DA1C /* UIView+FastActions.swift in Sources */,
+				65D873F4230C010D008B0BAE /* FastActions.swift in Sources */,
+				65FCDCCB231C0439009B2521 /* Subscriber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F7256F231E0CCF00A7035D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F7257C231E0CFD00A7035D /* FastActions.swift in Sources */,
+				65F7257D231E0CFD00A7035D /* FastActionsParams.swift in Sources */,
+				65F7257E231E0CFD00A7035D /* FastActionDispatch.swift in Sources */,
+				65F7257F231E0CFD00A7035D /* FastActionsDispatcher.swift in Sources */,
+				65F72580231E0CFD00A7035D /* Subscriber.swift in Sources */,
+				65F72581231E0CFD00A7035D /* FastActionsMaps.swift in Sources */,
+				65F72582231E0CFD00A7035D /* UIView+FastActions.swift in Sources */,
+				65F72583231E0CFD00A7035D /* UIViewController+FastActions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F72587231E117F00A7035D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F72594231E11C600A7035D /* FastActions.swift in Sources */,
+				65F72595231E11C600A7035D /* FastActionsParams.swift in Sources */,
+				65F72596231E11C600A7035D /* FastActionDispatch.swift in Sources */,
+				65F72597231E11C600A7035D /* FastActionsDispatcher.swift in Sources */,
+				65F72598231E11C600A7035D /* Subscriber.swift in Sources */,
+				65F72599231E11C600A7035D /* FastActionsMaps.swift in Sources */,
+				65F7259A231E11C600A7035D /* UIView+FastActions.swift in Sources */,
+				65F7259B231E11C600A7035D /* UIViewController+FastActions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F725A1231E124600A7035D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		65D873C9230BFD3A008B0BAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65D873CA230BFD3A008B0BAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65D873CC230BFD3A008B0BAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6T2846DGS3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YxxxHao.FastActions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65D873CD230BFD3A008B0BAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6T2846DGS3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YxxxHao.FastActions;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65F72579231E0CCF00A7035D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6T2846DGS3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YxxxHao.FastActions-macOS";
+				PRODUCT_NAME = FastActions;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		65F7257A231E0CCF00A7035D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6T2846DGS3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YxxxHao.FastActions-macOS";
+				PRODUCT_NAME = FastActions;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		65F72591231E118000A7035D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6T2846DGS3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YxxxHao.FastActions-tvOS";
+				PRODUCT_NAME = FastActions;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		65F72592231E118000A7035D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6T2846DGS3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YxxxHao.FastActions-tvOS";
+				PRODUCT_NAME = FastActions;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		65F725AB231E124600A7035D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6T2846DGS3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YxxxHao.FastActions-watchOS";
+				PRODUCT_NAME = FastActions;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		65F725AC231E124600A7035D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6T2846DGS3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YxxxHao.FastActions-watchOS";
+				PRODUCT_NAME = FastActions;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65D873BD230BFD3A008B0BAE /* Build configuration list for PBXProject "FastActions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D873C9230BFD3A008B0BAE /* Debug */,
+				65D873CA230BFD3A008B0BAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D873CB230BFD3A008B0BAE /* Build configuration list for PBXNativeTarget "FastActions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D873CC230BFD3A008B0BAE /* Debug */,
+				65D873CD230BFD3A008B0BAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F72578231E0CCF00A7035D /* Build configuration list for PBXNativeTarget "FastActions-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F72579231E0CCF00A7035D /* Debug */,
+				65F7257A231E0CCF00A7035D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F72590231E118000A7035D /* Build configuration list for PBXNativeTarget "FastActions-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F72591231E118000A7035D /* Debug */,
+				65F72592231E118000A7035D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F725AA231E124600A7035D /* Build configuration list for PBXNativeTarget "FastActions-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F725AB231E124600A7035D /* Debug */,
+				65F725AC231E124600A7035D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65D873BA230BFD3A008B0BAE /* Project object */;
+}

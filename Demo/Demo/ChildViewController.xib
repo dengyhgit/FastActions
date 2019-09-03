@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChildViewController" customModule="FastActions_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zbz-xe-aUH">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRr-Bg-ARD">
+                            <rect key="frame" x="112.5" y="6" width="150" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="YAc-Zw-tDp"/>
+                                <constraint firstAttribute="width" constant="150" id="aed-ng-XeD"/>
+                            </constraints>
+                            <state key="normal" title="Child VC Button"/>
+                            <connections>
+                                <action selector="click:" destination="-1" eventType="touchUpInside" id="zEL-Mv-crk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.74541191790595573" green="0.86223484290176178" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="7Ax-jO-gCQ"/>
+                        <constraint firstItem="rRr-Bg-ARD" firstAttribute="centerY" secondItem="zbz-xe-aUH" secondAttribute="centerY" id="JI6-ku-4B4"/>
+                        <constraint firstItem="rRr-Bg-ARD" firstAttribute="centerX" secondItem="zbz-xe-aUH" secondAttribute="centerX" id="owT-WK-9kH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zbz-xe-aUH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bgs-NB-5NT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zbz-xe-aUH" secondAttribute="trailing" id="qq0-00-vKc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zbz-xe-aUH" secondAttribute="bottom" id="yUg-sX-1ac"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
