@@ -78,18 +78,23 @@ extension FastActionsWrapper where Base: View {
     //MARK: - Private
     
     private var viewController: ViewController? {
-        var next = self.base as View
+        var view = self.base as View
         #if os(macOS)
-        let responder = next.nextResponder
+        var responder = view.nextResponder
         #else
-        let responder = next.next
+        var responder = view.next
         #endif
-        while let responder = responder {
-            if let vc = responder as? ViewController {
+        while let r = responder {
+            if let vc = r as? ViewController {
                 return vc
             }
-            guard let superview = next.superview else { return nil }
-            next = superview
+            guard let superview = view.superview else { return nil }
+            view = superview
+            #if os(macOS)
+            responder = view.nextResponder
+            #else
+            responder = view.next
+            #endif
         }
         return nil
     }
