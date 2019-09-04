@@ -14,6 +14,7 @@ class ChildViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.clear
+        view.isUserInteractionEnabled = false
     }
 
     @IBAction func click(_ sender: UIButton) {

@@ -33,6 +33,12 @@ class NextViewController: UIViewController {
         sender.fa.dispatch(params: params)
     }
     
+    @IBAction func dispatchVC(_ sender: UIButton) {
+        let params = FastActionsParams(tag: "kDispatchVCAction")
+        params.data = "Hi FastAction DispatchVC"
+        sender.fa.dispatchToVC(params: params)
+    }
+    
 }
 
 extension NextViewController: FastActionsMaps {
@@ -40,6 +46,7 @@ extension NextViewController: FastActionsMaps {
         return [
                 "kDispatchAllAction":#selector(clickBtn(_:)),
                 "kChildVCBntClickAction":#selector(childVCBntClick(_:)),
+                "kDispatchVCAction":#selector(currentVCBntClick(_:)),
                 ]
     }
     
@@ -50,6 +57,11 @@ extension NextViewController: FastActionsMaps {
     @objc func childVCBntClick(_ params: FastActionsParams) {
         print(params.data ?? "data is nil")
     }
+    
+    @objc func currentVCBntClick(_ params: FastActionsParams) {
+        print(params.data ?? "data is nil")
+    }
+
 
 }
 
