@@ -3,14 +3,19 @@
 <p align="center">
 <a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
 <a href="https://github.com/dengyhgit/FastActions/"><img src="https://img.shields.io/cocoapods/v/FastActions.svg?style=flat"></a>
+<a href="https://github.com/dengyhgit/FastActions"><img src="https://img.shields.io/cocoapods/l/FastActions.svg?style=flat"></a>
+<a href="https://github.com/dengyhgit/FastActions/"><img src="https://img.shields.io/cocoapods/p/FastActions.svg?style=flat"></a>
 </p>
+
 
 
 FastActions is a powerful and pure Swift implemented library for action handler.
 
 ## Features
 
-- [x] action event
+- [x] View send action to current ViewController or ChildViewController
+- [x] View send action to current NavigationController viewControllers
+- [x] View send action to any Class
 
 The simplest use-case is send action to an `ViewController` with the `UIButton` extension:
 
@@ -60,7 +65,7 @@ Then, run the following command to build the FastActions framework:
 
 ```
 $ carthage update FastActions --platform iOS
-# Or `--platform macOS`, `--platform tvOS`, `--platform watchOS`
+# Or `--platform macOS`, `--platform tvOS`
 ```
 
 ## License
