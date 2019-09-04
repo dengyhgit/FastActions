@@ -30,21 +30,34 @@ public protocol FastActionsParamsProtcol {
     var tag: String { get set }
     var sender: AnyObject? { get set}
     var data: Any? { get set }
+    var indexPath: IndexPath? { get set}
     var extraData: Any? { get set }
 }
 
 public class FastActionsParams: NSObject, FastActionsParamsProtcol {
     
+    /// unique identifier of the action
     public var tag: String
     public weak var sender: AnyObject?
     public var data: Any?
+    public var indexPath: IndexPath?
     public var extraData: Any?
     
     public init(tag: String) {
         self.tag = tag
     }
     
-    public init(tag: String, sender: AnyObject?, data: Any?, extraData: Any?) {
+    public init(tag: String, data: Any?) {
+        self.tag = tag
+        self.data = data
+    }
+
+    public init(tag: String, indexPath: IndexPath?) {
+        self.tag = tag
+        self.indexPath = indexPath
+    }
+
+    public init(tag: String, sender: AnyObject?, data: Any?, indexPath: IndexPath, extraData: Any?) {
         self.tag = tag
         self.sender = sender
         self.data = data

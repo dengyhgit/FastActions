@@ -33,33 +33,45 @@ extension FastActionsWrapper where Base: View {
     public func dispatchToVC(_ tag: String) {
         guard let vc = viewController else { return }
         let params = FastActionsParams(tag: tag)
+        params.sender = base
         vc.fa.dispatchToMyself(params)
     }
 
     public func dispatchToVC(params: FastActionsParams) {
         guard let vc = viewController else { return }
+        if params.sender == nil {
+            params.sender = base
+        }
         vc.fa.dispatchToMyself(params)
     }
     
     public func dispatchToParentVC(_ tag: String) {
         guard let vc = viewController else { return }
         let params = FastActionsParams(tag: tag)
+        params.sender = base
         vc.fa.dispatchToParent(params)
     }
     
     public func dispatchToParentVC(params: FastActionsParams) {
         guard let vc = viewController else { return }
+        if params.sender == nil {
+            params.sender = base
+        }
         vc.fa.dispatchToParent(params)
     }
     
     public func dispathcToNavVCs(_ tag: String, _ traverseAll: Bool = false) {
         guard let vc = viewController else { return }
         let params = FastActionsParams(tag: tag)
+        params.sender = base
         vc.fa.dispathcToNavVCs(params)
     }
     
     public func dispathcToNavVCs(params: FastActionsParams) {
         guard let vc = viewController else { return }
+        if params.sender == nil {
+            params.sender = base
+        }
         vc.fa.dispathcToNavVCs(params)
     }
 

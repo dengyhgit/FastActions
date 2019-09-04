@@ -29,16 +29,24 @@ import Foundation
 extension FastActionsWrapper where Base: ViewController {
 
     public func dispatchToMyself(_ params: FastActionsParams) {
+        if params.sender == nil {
+            params.sender = base
+        }
         executeAction(self.base, params: params)
     }
     
     public func dispatchToParent(_ params: FastActionsParams) {
-        
+        if params.sender == nil {
+            params.sender = base
+        }
         guard let parent = self.base.parent else { return }
         executeAction(parent, params: params)
     }
 
     public func dispatchToChile(_ params: FastActionsParams) {
+        if params.sender == nil {
+            params.sender = base
+        }
         let vcs = self.base.children
         for vc in vcs {
             executeAction(vc, params: params)
@@ -46,9 +54,11 @@ extension FastActionsWrapper where Base: ViewController {
     }
     
     public func dispathcToNavVCs(_ params: FastActionsParams, _ traverseAll: Bool = false) {
-        
+        if params.sender == nil {
+            params.sender = base
+        }
         #if os(macOS)
-        
+            
         #else
         guard let vcs = self.base.navigationController?.viewControllers else { return }
         for vc in vcs {
