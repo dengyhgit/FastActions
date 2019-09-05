@@ -30,11 +30,13 @@ import Foundation
 import AppKit
 public typealias ViewController = NSViewController
 public typealias View = NSView
+public typealias Button = NSButton
 #else
 import UIKit
 #if !os(watchOS)
 public typealias ViewController = UIViewController
 public typealias View = UIView
+public typealias Button = UIButton
 #else
 import WatchKit
 public typealias View = WKInterfaceObject

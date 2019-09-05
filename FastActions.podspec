@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FastActions"
-  spec.version      = "0.1.0"
+  spec.version      = "0.2.0"
   spec.summary      = "FastActions is a powerful and pure Swift implemented library for action handler."
 
   spec.description  = <<-DESC

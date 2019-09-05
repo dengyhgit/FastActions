@@ -32,10 +32,6 @@
 		65F72548231E04F200A7035D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F72547231E04F200A7035D /* Assets.xcassets */; };
 		65F7254D231E04F200A7035D /* watchOS-Demo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 65F72530231E04F000A7035D /* watchOS-Demo.app */; };
 		65F72585231E104900A7035D /* FastActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F72584231E104900A7035D /* FastActions.framework */; };
-		65F7259D231E11DD00A7035D /* FastActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F7259C231E11DD00A7035D /* FastActions.framework */; };
-		65F7259E231E11DD00A7035D /* FastActions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65F7259C231E11DD00A7035D /* FastActions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		65F725AE231E131500A7035D /* FastActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F725AD231E131500A7035D /* FastActions.framework */; };
-		65F725AF231E131500A7035D /* FastActions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65F725AD231E131500A7035D /* FastActions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		65FCDCD2231CB486009B2521 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FCDCD0231CB486009B2521 /* NextViewController.swift */; };
 		65FCDCD3231CB486009B2521 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65FCDCD1231CB486009B2521 /* NextViewController.xib */; };
 /* End PBXBuildFile section */
@@ -86,7 +82,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				65F7259E231E11DD00A7035D /* FastActions.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +92,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				65F725AF231E131500A7035D /* FastActions.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +135,6 @@
 		65F7254A231E04F200A7035D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		65F72556231E052500A7035D /* FastActions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FastActions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F72584231E104900A7035D /* FastActions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FastActions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65F7259C231E11DD00A7035D /* FastActions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FastActions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		65F725AD231E131500A7035D /* FastActions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FastActions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FCDCD0231CB486009B2521 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		65FCDCD1231CB486009B2521 /* NextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +160,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65F7259D231E11DD00A7035D /* FastActions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +174,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65F725AE231E131500A7035D /* FastActions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +193,6 @@
 		65D873CE230BFE4A008B0BAE = {
 			isa = PBXGroup;
 			children = (
-				65F725AD231E131500A7035D /* FastActions.framework */,
-				65F7259C231E11DD00A7035D /* FastActions.framework */,
 				65D873D9230BFE4A008B0BAE /* Demo */,
 				65F724F9231E045A00A7035D /* macOS-Demo */,
 				65F72520231E04C200A7035D /* tvOS-Demo */,

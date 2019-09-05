@@ -11,6 +11,8 @@ import FastActions
 
 class NextViewController: UIViewController {
     
+    @IBOutlet weak var button: UIButton!
+    
     deinit {
         self.fa.unsubscribe()
     }
@@ -25,6 +27,8 @@ class NextViewController: UIViewController {
         self.addChild(childVC)
         childVC.didMove(toParent: self)
         self.view.addSubview(childVC.view)
+        
+        button.fa.addDispatchToVC("kBtnDispatchVCAction", forControlEvents: .touchUpInside)
     }
 
     @IBAction func dispatchAll(_ sender: UIButton) {
@@ -47,6 +51,7 @@ extension NextViewController: FastActionsMaps {
                 "kDispatchAllAction":#selector(clickBtn(_:)),
                 "kChildVCBntClickAction":#selector(childVCBntClick(_:)),
                 "kDispatchVCAction":#selector(currentVCBntClick(_:)),
+                "kBtnDispatchVCAction":#selector(currentVCBntClick(_:)),
                 ]
     }
     
@@ -61,7 +66,6 @@ extension NextViewController: FastActionsMaps {
     @objc func currentVCBntClick(_ params: FastActionsParams) {
         print(params.data ?? "data is nil")
     }
-
 
 }
 

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NextViewController" customModule="FastActions_Demo" customModuleProvider="target">
             <connections>
+                <outlet property="button" destination="x9K-tx-keW" id="v07-a0-R2E"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -49,13 +50,23 @@
                         <constraint firstItem="9cT-Ht-5ox" firstAttribute="centerX" secondItem="wED-0o-57S" secondAttribute="centerX" id="e6B-Vn-vvz"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9K-tx-keW">
+                    <rect key="frame" x="145.5" y="410" width="84" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="Mfq-Ts-zPB"/>
+                        <constraint firstAttribute="height" constant="30" id="VSt-ru-XpN"/>
+                    </constraints>
+                    <state key="normal" title="BtnDispatch"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="x9K-tx-keW" firstAttribute="top" secondItem="wED-0o-57S" secondAttribute="bottom" constant="50" id="cOK-v2-67o"/>
                 <constraint firstItem="wED-0o-57S" firstAttribute="centerX" secondItem="lZL-Zi-X2v" secondAttribute="centerX" id="jcw-sg-Uyn"/>
                 <constraint firstItem="wED-0o-57S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nXI-u3-2nM"/>
                 <constraint firstItem="wED-0o-57S" firstAttribute="top" secondItem="lZL-Zi-X2v" secondAttribute="bottom" constant="30" id="psj-0T-hLH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wED-0o-57S" secondAttribute="bottom" constant="307" id="sDg-ca-0nK"/>
+                <constraint firstItem="x9K-tx-keW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sch-Zb-3Qz"/>
                 <constraint firstItem="wED-0o-57S" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tR3-fN-NeH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

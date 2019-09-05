@@ -31,10 +31,8 @@ extension FastActionsWrapper where Base: View {
     //MARK: - Public
     
     public func dispatchToVC(_ tag: String) {
-        guard let vc = viewController else { return }
         let params = FastActionsParams(tag: tag)
-        params.sender = base
-        vc.fa.dispatchToMyself(params)
+        dispatchToVC(params: params)
     }
 
     public func dispatchToVC(params: FastActionsParams) {
@@ -46,10 +44,8 @@ extension FastActionsWrapper where Base: View {
     }
     
     public func dispatchToParentVC(_ tag: String) {
-        guard let vc = viewController else { return }
         let params = FastActionsParams(tag: tag)
-        params.sender = base
-        vc.fa.dispatchToParent(params)
+        dispatchToParentVC(params: params)
     }
     
     public func dispatchToParentVC(params: FastActionsParams) {
@@ -61,23 +57,21 @@ extension FastActionsWrapper where Base: View {
     }
     
     public func dispathcToNavVCs(_ tag: String, _ traverseAll: Bool = false) {
-        guard let vc = viewController else { return }
         let params = FastActionsParams(tag: tag)
-        params.sender = base
-        vc.fa.dispathcToNavVCs(params)
+        dispathcToNavVCs(params: params, traverseAll)
     }
     
-    public func dispathcToNavVCs(params: FastActionsParams) {
+    public func dispathcToNavVCs(params: FastActionsParams, _ traverseAll: Bool = false) {
         guard let vc = viewController else { return }
         if params.sender == nil {
             params.sender = base
         }
-        vc.fa.dispathcToNavVCs(params)
+        vc.fa.dispathcToNavVCs(params, traverseAll)
     }
 
     //MARK: - Private
     
-    private var viewController: ViewController? {
+    public var viewController: ViewController? {
         var view = self.base as View
         #if os(macOS)
         var responder = view.nextResponder
