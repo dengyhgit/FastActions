@@ -1,0 +1,31 @@
+language: swift
+
+osx_image: 
+- xcode10.1
+- xcode10.2
+
+env:
+- SCHEME=FastActions SWIFT_VERSION=5.0
+- SCHEME=FastActions-macOS SWIFT_VERSION=5.0
+- SCHEME=FastActions-tvOS SWIFT_VERSION=5.0
+- SCHEME=FastActions SWIFT_VERSION=4.2
+- SCHEME=FastActions-macOS SWIFT_VERSION=4.2
+- SCHEME=FastActions-tvOS SWIFT_VERSION=4.2
+- SCHEME=FastActions SWIFT_VERSION=4.0
+- SCHEME=FastActions-macOS SWIFT_VERSION=4.0
+- SCHEME=FastActions-tvOS SWIFT_VERSION=4.0
+
+cache: bundler
+
+before_install:
+  - gem update --system
+  - gem install bundler
+
+matrix:
+  exclude:
+  - osx_image: xcode10.1
+    env: SCHEME=FastActions SWIFT_VERSION=5.0
+  - osx_image: xcode10.1
+    env: SCHEME=FastActions-macOS SWIFT_VERSION=5.0
+  - osx_image: xcode10.1
+    env: SCHEME=FastActions-tvOS SWIFT_VERSION=5.0
