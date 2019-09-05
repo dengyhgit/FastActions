@@ -1,6 +1,7 @@
 ![FastAction](./images/FastActions.png)
 
 <p align="center">
+<a href="https://travis-ci.org/dengyhgit/FastActions"><img src="https://img.shields.io/travis/dengyhgit/FastActions/master.svg"></a>
 <a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
 <a href="https://github.com/dengyhgit/FastActions/"><img src="https://img.shields.io/cocoapods/v/FastActions.svg?style=flat"></a>
 <a href="https://github.com/dengyhgit/FastActions"><img src="https://img.shields.io/cocoapods/l/FastActions.svg?style=flat"></a>
