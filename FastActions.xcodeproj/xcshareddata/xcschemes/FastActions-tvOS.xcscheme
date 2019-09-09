@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "657647F523264E35000C7C77"
+               BlueprintIdentifier = "6576480423268163000C7C77"
                BuildableName = "FastActionsTests-tvOS.xctest"
                BlueprintName = "FastActionsTests-tvOS"
                ReferencedContainer = "container:FastActions.xcodeproj">

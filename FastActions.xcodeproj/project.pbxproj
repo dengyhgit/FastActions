@@ -15,8 +15,8 @@
 		657647DC23264AE5000C7C77 /* FastActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D873C3230BFD3A008B0BAE /* FastActions.framework */; };
 		657647EA23264DB5000C7C77 /* FastActionsTests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657647E923264DB5000C7C77 /* FastActionsTests_macOS.swift */; };
 		657647EC23264DB5000C7C77 /* FastActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F72573231E0CCF00A7035D /* FastActions.framework */; };
-		657647F923264E35000C7C77 /* FastActionsTests_tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657647F823264E35000C7C77 /* FastActionsTests_tvOS.swift */; };
-		657647FB23264E35000C7C77 /* FastActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F7258B231E117F00A7035D /* FastActions.framework */; };
+		6576480823268164000C7C77 /* FastActionsTests_tvOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576480723268164000C7C77 /* FastActionsTests_tvOS.swift */; };
+		6576480A23268164000C7C77 /* FastActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F7258B231E117F00A7035D /* FastActions.framework */; };
 		659FA8C32324CDA9004BEC18 /* UIView+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659FA8C22324CDA9004BEC18 /* UIView+FastActions.swift */; };
 		65B8FF9D2319175D0018DA1C /* View+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9C2319175D0018DA1C /* View+FastActions.swift */; };
 		65B8FF9F231944350018DA1C /* ViewController+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8FF9E231944340018DA1C /* ViewController+FastActions.swift */; };
@@ -62,7 +62,7 @@
 			remoteGlobalIDString = 65F72572231E0CCF00A7035D;
 			remoteInfo = "FastActions-macOS";
 		};
-		657647FC23264E35000C7C77 /* PBXContainerItemProxy */ = {
+		6576480B23268164000C7C77 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 65D873BA230BFD3A008B0BAE /* Project object */;
 			proxyType = 1;
@@ -82,9 +82,9 @@
 		657647E723264DB5000C7C77 /* FastActionsTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FastActionsTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		657647E923264DB5000C7C77 /* FastActionsTests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActionsTests_macOS.swift; sourceTree = "<group>"; };
 		657647EB23264DB5000C7C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		657647F623264E35000C7C77 /* FastActionsTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FastActionsTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		657647F823264E35000C7C77 /* FastActionsTests_tvOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActionsTests_tvOS.swift; sourceTree = "<group>"; };
-		657647FA23264E35000C7C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6576480523268163000C7C77 /* FastActionsTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FastActionsTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6576480723268164000C7C77 /* FastActionsTests_tvOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActionsTests_tvOS.swift; sourceTree = "<group>"; };
+		6576480923268164000C7C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659FA8C22324CDA9004BEC18 /* UIView+FastActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FastActions.swift"; sourceTree = "<group>"; };
 		65B8FF9C2319175D0018DA1C /* View+FastActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+FastActions.swift"; sourceTree = "<group>"; };
 		65B8FF9E231944340018DA1C /* ViewController+FastActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+FastActions.swift"; sourceTree = "<group>"; };
@@ -118,11 +118,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		657647F323264E35000C7C77 /* Frameworks */ = {
+		6576480223268163000C7C77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				657647FB23264E35000C7C77 /* FastActions.framework in Frameworks */,
+				6576480A23268164000C7C77 /* FastActions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +169,7 @@
 		657647E223264B2A000C7C77 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				657647F723264E35000C7C77 /* FastActionsTests-tvOS */,
+				6576480623268164000C7C77 /* FastActionsTests-tvOS */,
 				657647E823264DB5000C7C77 /* FastActionsTests-macOS */,
 				657647D823264AE5000C7C77 /* FastActionsTests */,
 			);
@@ -185,11 +185,11 @@
 			path = "FastActionsTests-macOS";
 			sourceTree = "<group>";
 		};
-		657647F723264E35000C7C77 /* FastActionsTests-tvOS */ = {
+		6576480623268164000C7C77 /* FastActionsTests-tvOS */ = {
 			isa = PBXGroup;
 			children = (
-				657647F823264E35000C7C77 /* FastActionsTests_tvOS.swift */,
-				657647FA23264E35000C7C77 /* Info.plist */,
+				6576480723268164000C7C77 /* FastActionsTests_tvOS.swift */,
+				6576480923268164000C7C77 /* Info.plist */,
 			);
 			path = "FastActionsTests-tvOS";
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 				65F725A5231E124600A7035D /* FastActions.framework */,
 				657647D723264AE4000C7C77 /* FastActionsTests.xctest */,
 				657647E723264DB5000C7C77 /* FastActionsTests-macOS.xctest */,
-				657647F623264E35000C7C77 /* FastActionsTests-tvOS.xctest */,
+				6576480523268163000C7C77 /* FastActionsTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -336,22 +336,22 @@
 			productReference = 657647E723264DB5000C7C77 /* FastActionsTests-macOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		657647F523264E35000C7C77 /* FastActionsTests-tvOS */ = {
+		6576480423268163000C7C77 /* FastActionsTests-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 657647FE23264E35000C7C77 /* Build configuration list for PBXNativeTarget "FastActionsTests-tvOS" */;
+			buildConfigurationList = 6576480D23268164000C7C77 /* Build configuration list for PBXNativeTarget "FastActionsTests-tvOS" */;
 			buildPhases = (
-				657647F223264E35000C7C77 /* Sources */,
-				657647F323264E35000C7C77 /* Frameworks */,
-				657647F423264E35000C7C77 /* Resources */,
+				6576480123268163000C7C77 /* Sources */,
+				6576480223268163000C7C77 /* Frameworks */,
+				6576480323268163000C7C77 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				657647FD23264E35000C7C77 /* PBXTargetDependency */,
+				6576480C23268164000C7C77 /* PBXTargetDependency */,
 			);
 			name = "FastActionsTests-tvOS";
 			productName = "FastActionsTests-tvOS";
-			productReference = 657647F623264E35000C7C77 /* FastActionsTests-tvOS.xctest */;
+			productReference = 6576480523268163000C7C77 /* FastActionsTests-tvOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		65D873C2230BFD3A008B0BAE /* FastActions */ = {
@@ -442,7 +442,7 @@
 					657647E623264DB5000C7C77 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					657647F523264E35000C7C77 = {
+					6576480423268163000C7C77 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					65D873C2230BFD3A008B0BAE = {
@@ -479,7 +479,7 @@
 				65F725A4231E124600A7035D /* FastActions-watchOS */,
 				657647D623264AE4000C7C77 /* FastActionsTests */,
 				657647E623264DB5000C7C77 /* FastActionsTests-macOS */,
-				657647F523264E35000C7C77 /* FastActionsTests-tvOS */,
+				6576480423268163000C7C77 /* FastActionsTests-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -499,7 +499,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		657647F423264E35000C7C77 /* Resources */ = {
+		6576480323268163000C7C77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -553,11 +553,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		657647F223264E35000C7C77 /* Sources */ = {
+		6576480123268163000C7C77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				657647F923264E35000C7C77 /* FastActionsTests_tvOS.swift in Sources */,
+				6576480823268164000C7C77 /* FastActionsTests_tvOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,10 +630,10 @@
 			target = 65F72572231E0CCF00A7035D /* FastActions-macOS */;
 			targetProxy = 657647ED23264DB5000C7C77 /* PBXContainerItemProxy */;
 		};
-		657647FD23264E35000C7C77 /* PBXTargetDependency */ = {
+		6576480C23268164000C7C77 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 65F7258A231E117F00A7035D /* FastActions-tvOS */;
-			targetProxy = 657647FC23264E35000C7C77 /* PBXContainerItemProxy */;
+			targetProxy = 6576480B23268164000C7C77 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -722,7 +722,7 @@
 			};
 			name = Release;
 		};
-		657647FF23264E35000C7C77 /* Debug */ = {
+		6576480E23268164000C7C77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -744,7 +744,7 @@
 			};
 			name = Debug;
 		};
-		6576480023264E35000C7C77 /* Release */ = {
+		6576480F23268164000C7C77 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -1142,11 +1142,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		657647FE23264E35000C7C77 /* Build configuration list for PBXNativeTarget "FastActionsTests-tvOS" */ = {
+		6576480D23268164000C7C77 /* Build configuration list for PBXNativeTarget "FastActionsTests-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				657647FF23264E35000C7C77 /* Debug */,
-				6576480023264E35000C7C77 /* Release */,
+				6576480E23268164000C7C77 /* Debug */,
+				6576480F23268164000C7C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
