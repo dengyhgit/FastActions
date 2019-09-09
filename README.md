@@ -59,7 +59,7 @@ $ pod install
 To integrate FastActions into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```
-github "onevcat/FastActions" ~> 1.0
+github "dengyhgit/FastActions" ~> 1.0
 ```
 
 Then, run the following command to build the FastActions framework:

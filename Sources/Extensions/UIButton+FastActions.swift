@@ -5,8 +5,27 @@
 //  Created by dengyonghao on 2019/9/4.
 //  Copyright © 2019 DengYonghao. All rights reserved.
 //
+//  Created by dengyonghao on 2019/8/30.
+//  Copyright © 2019 DengYonghao. All rights reserved.
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 
-import Foundation
 import UIKit
 
 
@@ -61,22 +80,12 @@ extension FastActionsWrapper where Base: UIButton {
     
 }
 
-private var buttonActionBlockKey: Void?
 
 extension UIButton {
     
-    private var actionBlock: ((_ sender: UIButton)-> Void)? {
-        get { return getAssociatedObject(self, &buttonActionBlockKey) }
-        set { setRetainedAssociatedObject(self, &buttonActionBlockKey, newValue) }
-    }
-    
     fileprivate func action(forControlEvents controlEvents: UIControl.Event, _ block: ((_ sender: UIButton)-> Void)?) {
-        actionBlock = block
+        self.actionBlock = block
         self.addTarget(self, action: #selector(handleAction(_:)), for: controlEvents)
-    }
-    
-    @objc private func handleAction(_ sender: UIButton) {
-        actionBlock?(sender)
     }
 
 }

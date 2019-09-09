@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "65F72572231E0CCF00A7035D"
+               BlueprintIdentifier = "65F7258A231E117F00A7035D"
                BuildableName = "FastActions.framework"
-               BlueprintName = "FastActions-macOS"
+               BlueprintName = "FastActions-tvOS"
                ReferencedContainer = "container:FastActions.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "657647E623264DB5000C7C77"
-               BuildableName = "FastActionsTests-macOS.xctest"
-               BlueprintName = "FastActionsTests-macOS"
+               BlueprintIdentifier = "657647F523264E35000C7C77"
+               BuildableName = "FastActionsTests-tvOS.xctest"
+               BlueprintName = "FastActionsTests-tvOS"
                ReferencedContainer = "container:FastActions.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65F72572231E0CCF00A7035D"
+            BlueprintIdentifier = "65F7258A231E117F00A7035D"
             BuildableName = "FastActions.framework"
-            BlueprintName = "FastActions-macOS"
+            BlueprintName = "FastActions-tvOS"
             ReferencedContainer = "container:FastActions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65F72572231E0CCF00A7035D"
+            BlueprintIdentifier = "65F7258A231E117F00A7035D"
             BuildableName = "FastActions.framework"
-            BlueprintName = "FastActions-macOS"
+            BlueprintName = "FastActions-tvOS"
             ReferencedContainer = "container:FastActions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65F72572231E0CCF00A7035D"
+            BlueprintIdentifier = "65F7258A231E117F00A7035D"
             BuildableName = "FastActions.framework"
-            BlueprintName = "FastActions-macOS"
+            BlueprintName = "FastActions-tvOS"
             ReferencedContainer = "container:FastActions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

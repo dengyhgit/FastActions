@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "65F72572231E0CCF00A7035D"
-               BuildableName = "FastActions.framework"
-               BlueprintName = "FastActions-macOS"
-               ReferencedContainer = "container:FastActions.xcodeproj">
+               BlueprintIdentifier = "65D873D6230BFE4A008B0BAE"
+               BuildableName = "FastActions-Demo.app"
+               BlueprintName = "FastActions-Demo"
+               ReferencedContainer = "container:FastActions-Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "657647E623264DB5000C7C77"
-               BuildableName = "FastActionsTests-macOS.xctest"
-               BlueprintName = "FastActionsTests-macOS"
-               ReferencedContainer = "container:FastActions.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65F72572231E0CCF00A7035D"
-            BuildableName = "FastActions.framework"
-            BlueprintName = "FastActions-macOS"
-            ReferencedContainer = "container:FastActions.xcodeproj">
+            BlueprintIdentifier = "65D873D6230BFE4A008B0BAE"
+            BuildableName = "FastActions-Demo.app"
+            BlueprintName = "FastActions-Demo"
+            ReferencedContainer = "container:FastActions-Demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -61,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65F72572231E0CCF00A7035D"
-            BuildableName = "FastActions.framework"
-            BlueprintName = "FastActions-macOS"
-            ReferencedContainer = "container:FastActions.xcodeproj">
+            BlueprintIdentifier = "65D873D6230BFE4A008B0BAE"
+            BuildableName = "FastActions-Demo.app"
+            BlueprintName = "FastActions-Demo"
+            ReferencedContainer = "container:FastActions-Demo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "65F72572231E0CCF00A7035D"
-            BuildableName = "FastActions.framework"
-            BlueprintName = "FastActions-macOS"
-            ReferencedContainer = "container:FastActions.xcodeproj">
+            BlueprintIdentifier = "65D873D6230BFE4A008B0BAE"
+            BuildableName = "FastActions-Demo.app"
+            BlueprintName = "FastActions-Demo"
+            ReferencedContainer = "container:FastActions-Demo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
