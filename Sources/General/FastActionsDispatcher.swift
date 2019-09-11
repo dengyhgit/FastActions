@@ -23,7 +23,6 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-
 import Foundation
 
 public class FastActionsDispatcher {
@@ -32,11 +31,17 @@ public class FastActionsDispatcher {
     
     public static let shared = FastActionsDispatcher()
     
+    /// An object registering as an observer.
+    ///
+    /// - Parameter targer: The object to receive action messages sent by the receiver when the represented remote command is triggered.
     public func subscribe(_ targer: AnyObject) {
         let subscriber = SubscriberWrapper(subscriber: targer)
         subscribers.update(with: subscriber)
     }
     
+    /// The observer to remove.
+    ///
+    /// - Parameter targer: Remove Object a given observer from the subscribe table.
     public func unsubscribe(_ targer: AnyObject) {
 //        let subscriber = SubscriberWrapper(subscriber: targer)
 //        subscribers.remove(subscriber)
@@ -47,7 +52,10 @@ public class FastActionsDispatcher {
         }
     }
     
-    public func dispatch(_ params: FastActionsParams) {
+    /// send action to subscriber
+    ///
+    /// - Parameter params: actions params
+    public func dispatch(_ params: FastActionsParamsProtcol) {
         for subscriber in subscribers {
             guard let targer = subscriber.subscriber as? FastActionsMaps else { return }
             guard let action = targer.fastActionsMaps()[params.tag] else { return }
@@ -64,10 +72,12 @@ public class FastActionsDispatcher {
 
 extension FastActionsWrapper {
     
+    /// An object registering as an observer.
     public func subscribe() {
         FastActionsDispatcher.shared.subscribe(self.base as AnyObject)
     }
     
+    /// The observer to remove.
     public func unsubscribe() {
         FastActionsDispatcher.shared.unsubscribe(self.base as AnyObject)
     }

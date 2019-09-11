@@ -28,6 +28,9 @@ import Foundation
 
 public protocol FastActionsMaps {
     
+    /// actions handle table
+    ///
+    /// - Returns: selector table
     func fastActionsMaps() -> Dictionary<String, Selector>
     
 }

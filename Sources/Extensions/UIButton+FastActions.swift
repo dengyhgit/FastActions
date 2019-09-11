@@ -43,7 +43,7 @@ extension FastActionsWrapper where Base: UIButton {
         if params.sender == nil {
             params.sender = base
         }
-        self.base.action(forControlEvents: .touchUpInside) { _ in
+        self.base.action(forControlEvents: controlEvents) { _ in
             vc.fa.dispatchToMyself(params)
         }
     }
@@ -58,7 +58,7 @@ extension FastActionsWrapper where Base: UIButton {
         if params.sender == nil {
             params.sender = base
         }
-        self.base.action(forControlEvents: .touchUpInside) { _ in
+        self.base.action(forControlEvents: controlEvents) { _ in
             vc.fa.dispatchToParent(params)
         }
     }
@@ -73,7 +73,7 @@ extension FastActionsWrapper where Base: UIButton {
         if params.sender == nil {
             params.sender = base
         }
-        self.base.action(forControlEvents: .touchUpInside) { _ in
+        self.base.action(forControlEvents: controlEvents) { _ in
             vc.fa.dispathcToNavVCs(params)
         }
     }

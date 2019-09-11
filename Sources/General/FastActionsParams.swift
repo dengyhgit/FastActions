@@ -27,6 +27,7 @@
 import Foundation
 
 public protocol FastActionsParamsProtcol {
+    /// unique identifier of the action
     var tag: String { get set }
     var sender: AnyObject? { get set}
     var data: Any? { get set }
@@ -36,7 +37,6 @@ public protocol FastActionsParamsProtcol {
 
 public class FastActionsParams: NSObject, FastActionsParamsProtcol {
     
-    /// unique identifier of the action
     public var tag: String
     public weak var sender: AnyObject?
     public var data: Any?
@@ -54,6 +54,12 @@ public class FastActionsParams: NSObject, FastActionsParamsProtcol {
 
     public init(tag: String, indexPath: IndexPath?) {
         self.tag = tag
+        self.indexPath = indexPath
+    }
+    
+    public init(tag: String, data: Any?, indexPath: IndexPath?) {
+        self.tag = tag
+        self.data = data
         self.indexPath = indexPath
     }
 

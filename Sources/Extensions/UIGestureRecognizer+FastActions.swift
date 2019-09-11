@@ -46,7 +46,6 @@ extension UIView {
     
 }
 
-
 extension FastActionsWrapper where Base: UIView {
     
     public func tapDispatchToVC(tag: String) {

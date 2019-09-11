@@ -41,7 +41,7 @@ extension FastActionsWrapper {
     /// send action
     ///
     /// - Parameter params: action params
-    public func dispatch(params: FastActionsParams) {
+    public func dispatch(params: FastActionsParamsProtcol) {
         FastActionsDispatcher.shared.dispatch(params)
     }
     
