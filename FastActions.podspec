@@ -29,6 +29,23 @@ Pod::Spec.new do |spec|
   spec.public_header_files = ["Sources/FastActions.h"]
   spec.exclude_files = "Sources/Exclude"
 
+  spec.osx.exclude_files = [
+      "Sources/Extensions/UIButton+FastActions.swift", 
+      "Sources/Extensions/UIGestureRecognizer+FastActions.swift",
+      "Sources/Extensions/UIView+FastActions.swift"
+    ]
+  spec.watchos.exclude_files = [
+      
+    ]
+  spec.ios.exclude_files = [
+
+    ]
+  spec.tvos.exclude_files = [
+      "Sources/Extensions/UIButton+FastActions.swift", 
+      "Sources/Extensions/UIGestureRecognizer+FastActions.swift",
+      "Sources/Extensions/UIView+FastActions.swift"
+    ]
+
   spec.requires_arc = true
 
 end
