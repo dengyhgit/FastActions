@@ -1,4 +1,4 @@
-![FastAction](./images/FastActions.png)
+![FastAction](https://github.com/dengyhgit/FastActions/blob/master/images/FastActions.png?raw=true)
 
 <p align="center">
 <a href="https://travis-ci.org/dengyhgit/FastActions"><img src="https://img.shields.io/travis/dengyhgit/FastActions/master.svg"></a>
@@ -9,21 +9,41 @@
 </p>
 
 
+[中文文档](https://github.com/dengyhgit/FastActions/blob/master/README-CN.md)
 
 FastActions is a powerful and pure Swift implemented library for action handler.
 
 ## Features
 
-- [x] View send action to current ViewController or ChildViewController
+- [x] View send action to current ViewController( or childViewController or parentViewController)
 - [x] View send action to current NavigationController viewControllers
 - [x] View send action to any Class
+- [x] Support Button Click Action
+- [x] View support GestureRecognizer Action
+- [x] Support Swift 5.0+
 
 The simplest use-case is send action to an `ViewController` with the `UIButton` extension:
 
 ```swift
-let button = UIButton()
+// View.swift
 let params = FastActionsParams(tag: "kBntClickAction")
-button.fa.dispatchToVC(params: params)
+params.data = "Hi FastActions"
+self.button.fa.addDispatchToVC(params: params, forControlEvents: .touchUpInside)
+// or
+// self.button.fa.addDispatchToVC("kBntClickAction", forControlEvents: .touchUpInside)
+
+// ViewController.swift
+extension ViewController: FastActionsMaps {
+    func fastActionsMaps() -> Dictionary<String, Selector> {
+        return [
+                "kBntClickAction":#selector(clickBtn(_:)),
+                ]
+    }
+    
+    @objc func clickBtn(_ params: FastActionsParams) {
+        print(params.data ?? "data is nil")
+    }
+}
 ```
 
 ## Requirements
@@ -69,7 +89,13 @@ $ carthage update FastActions --platform iOS
 # Or `--platform macOS`, `--platform tvOS`
 ```
 
-## License
+## Other
+
+### Future of FastActions
+
+The purpose of FastActions is to provide a more convenient way for handle action. FastActions currently only provides some basic functionality, and it has a lot of room for improvement. We will provide more features later to make it more complete. Of course, I hope that everyone can join in and work together. 
+
+### License
 
 FastActions is released under the MIT license. See LICENSE for details.
 
