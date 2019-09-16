@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "FastActions is a powerful and pure Swift implemented library for action handler."
 
   spec.description  = <<-DESC
-  					          FastActions is a powerful and pure Swift implemented library for action handler.
+  					          The purpose of FastActions is to provide a more convenient way for handle action. FastActions currently only provides some basic functionality, and it has a lot of room for improvement. We will provide more features later to make it more complete.
                    DESC
 
   spec.homepage     = "https://github.com/dengyhgit/FastActions"
@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
   spec.author             = { "DengYonghao" => "cbyniypeu@163.com" }
-  spec.social_media_url   = "https://twitter.com/dengyonghao2"
+  # spec.social_media_url   = "https://twitter.com/dengyonghao2"
 
   spec.swift_version = "4.2"
   # spec.swift_versions = ['4.0', '4.2', '5.0']
