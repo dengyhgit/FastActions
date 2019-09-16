@@ -90,7 +90,7 @@ platform :ios do
                         --clean \
                         -x USE_SWIFT_RESPONSE_FILE=NO \
                         --author \"DengYanghao\" \
-                        --author_url https://dengyhgit.com \
+                        --author_url https://github.com/dengyhgit \
                         --github_url https://github.com/dengyhgit/FastActions \
                         --github-file-prefix https://github.com/dengyhgit/FastActions/tree/#{target_version} \
                         --module-version #{target_version} \
