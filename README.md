@@ -49,7 +49,7 @@ extension ViewController: FastActionsMaps {
 ## Requirements
 
 - iOS 9.0+ / macOS 10.12+ / tvOS 10.0+
-- Swift 4.0+
+- Swift 4.2+
 
 # Installation
 
