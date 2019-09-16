@@ -40,7 +40,7 @@ extension FastActionsWrapper where Base: View {
         if params.sender == nil {
             params.sender = base
         }
-        vc.fa.dispatchToMyself(params)
+        vc.fa.dispatchToSelf(params)
     }
     
     public func dispatchToParentVC(_ tag: String) {

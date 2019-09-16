@@ -60,7 +60,7 @@ extension FastActionsWrapper where Base: UIView {
         }
 
         self.base.tapAction { (_) in
-            vc.fa.dispatchToMyself(params)
+            vc.fa.dispatchToSelf(params)
         }
     }
     

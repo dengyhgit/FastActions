@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
   spec.exclude_files = "Sources/Exclude"
 
   spec.osx.exclude_files = [
-      "Sources/Extensions/UIButton+FastActions.swift", 
+      "Sources/Extensions/UIControl+FastActions.swift", 
       "Sources/Extensions/UIGestureRecognizer+FastActions.swift",
       "Sources/Extensions/UIView+FastActions.swift"
     ]
@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
 
     ]
   spec.tvos.exclude_files = [
-      "Sources/Extensions/UIButton+FastActions.swift", 
+      "Sources/Extensions/UIControl+FastActions.swift", 
       "Sources/Extensions/UIGestureRecognizer+FastActions.swift",
       "Sources/Extensions/UIView+FastActions.swift"
     ]

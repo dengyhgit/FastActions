@@ -1,5 +1,5 @@
 //
-//  UIButton+FastActions.swift
+//  UIControl+FastActions.swift
 //  FastActions
 //
 //  Created by dengyonghao on 2019/9/4.
@@ -29,7 +29,7 @@
 import UIKit
 
 
-extension FastActionsWrapper where Base: UIButton {
+extension FastActionsWrapper where Base: UIControl {
     
     //MARK: - Public
     
@@ -44,7 +44,7 @@ extension FastActionsWrapper where Base: UIButton {
             params.sender = base
         }
         self.base.action(forControlEvents: controlEvents) { _ in
-            vc.fa.dispatchToMyself(params)
+            vc.fa.dispatchToSelf(params)
         }
     }
     
@@ -81,7 +81,7 @@ extension FastActionsWrapper where Base: UIButton {
 }
 
 
-extension UIButton {
+extension UIControl {
     
     fileprivate func action(forControlEvents controlEvents: UIControl.Event, _ block: ((_ sender: UIButton)-> Void)?) {
         self.actionBlock = block

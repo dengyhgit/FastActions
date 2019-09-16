@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		655618C6231FBFB90019E29F /* UIButton+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655618C5231FBFB90019E29F /* UIButton+FastActions.swift */; };
+		655618C6231FBFB90019E29F /* UIControl+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655618C5231FBFB90019E29F /* UIControl+FastActions.swift */; };
 		655618C8231FC0590019E29F /* UIGestureRecognizer+FastActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655618C7231FC0590019E29F /* UIGestureRecognizer+FastActions.swift */; };
 		655618CE231FCE2C0019E29F /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655618CD231FCE2C0019E29F /* Runtime.swift */; };
 		65710ED1231CFF90004925E4 /* FastActionsMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65710ED0231CFF90004925E4 /* FastActionsMaps.swift */; };
@@ -72,7 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		655618C5231FBFB90019E29F /* UIButton+FastActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+FastActions.swift"; sourceTree = "<group>"; };
+		655618C5231FBFB90019E29F /* UIControl+FastActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+FastActions.swift"; sourceTree = "<group>"; };
 		655618C7231FC0590019E29F /* UIGestureRecognizer+FastActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+FastActions.swift"; sourceTree = "<group>"; };
 		655618CD231FCE2C0019E29F /* Runtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
 		65710ED0231CFF90004925E4 /* FastActionsMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastActionsMaps.swift; sourceTree = "<group>"; };
@@ -212,7 +212,7 @@
 			children = (
 				65B8FF9C2319175D0018DA1C /* View+FastActions.swift */,
 				65B8FF9E231944340018DA1C /* ViewController+FastActions.swift */,
-				655618C5231FBFB90019E29F /* UIButton+FastActions.swift */,
+				655618C5231FBFB90019E29F /* UIControl+FastActions.swift */,
 				655618C7231FC0590019E29F /* UIGestureRecognizer+FastActions.swift */,
 				659FA8C22324CDA9004BEC18 /* UIView+FastActions.swift */,
 			);
@@ -576,7 +576,7 @@
 				655618C8231FC0590019E29F /* UIGestureRecognizer+FastActions.swift in Sources */,
 				65FCDCCB231C0439009B2521 /* Subscriber.swift in Sources */,
 				655618CE231FCE2C0019E29F /* Runtime.swift in Sources */,
-				655618C6231FBFB90019E29F /* UIButton+FastActions.swift in Sources */,
+				655618C6231FBFB90019E29F /* UIControl+FastActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
